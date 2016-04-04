@@ -229,9 +229,9 @@ hr {
   background-attachment: fixed;
   background-size: cover; }
   .parallax-1 {
-    background-image: url("../img/parallax.png"); }
+    background-image: url("../img/parallax.jpg"); }
   .parallax-2 {
-    background-image: url("../img/parallax2.png"); }
+    background-image: url("../img/parallax2.jpg"); }
 
 #limits {
   background: -webkit-radial-gradient(transparent 20%, black);
@@ -293,7 +293,7 @@ hr {
     position: absolute;
     margin-bottom: -40px;
     bottom: 0;
-    background: url(../img/jay.png) no-repeat center bottom;
+    background: url(../img/jay.jpg) no-repeat center bottom;
     background-size: auto 100%; }
     @media all and (min-width: 768px) and (max-width: 991px) {
       #about-pic {
