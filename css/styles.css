@@ -8,26 +8,9 @@
              |___/                              |___/
 
 Project: MagicJays site; a website for my father's hobby.
-Designed & developed by Lauren Zugai ( zugai.com ) September 2015.
+Designed & developed by Lauren Zugai ( zugai.com ) August 2015. Refactored March 2016.
 All images not belonging to me are from Freepik.com & used within the terms.
 */
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
-/**/
 html, body {
   height: 100%;
   margin: 0; }
@@ -107,11 +90,6 @@ hr {
         #links ul li a:hover {
           text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
           color: grey; }
-      @media all and (max-width: 767px) and (orientation: landscape) {
-        #links ul li {
-          line-height: 2.5rem; }
-          #links ul li a {
-            font-size: 2rem; } }
 
 #intro {
   height: 100%;
@@ -130,12 +108,6 @@ hr {
     margin: 0 auto;
     background: url(../img/ornament.png) no-repeat center center;
     background-size: 100%; }
-    @media all and (max-width: 767px) and (orientation: landscape) {
-      #intro #heading {
-        max-width: 50%; } }
-    @media all and (max-width: 767px) {
-      #intro #heading {
-        background-position: top center; } }
   #intro h1 {
     font-size: 5.7rem;
     font-weight: normal;
@@ -143,25 +115,11 @@ hr {
     text-transform: uppercase;
     margin: 0;
     padding: 75px 0 5px 0; }
-    @media all and (max-width: 767px) and (orientation: portrait) {
-      #intro h1 {
-        font-size: 14.7vw;
-        padding-top: 16%; } }
-    @media all and (max-width: 767px) and (orientation: landscape) {
-      #intro h1 {
-        font-size: 10vw;
-        padding-top: 14%; } }
   #intro h2 {
     font-size: 5.2rem;
     color: #fff;
     text-transform: uppercase;
     margin: -15px 0 0 0; }
-    @media all and (max-width: 620px) and (orientation: portrait) {
-      #intro h2 {
-        font-size: 13.4vw; } }
-    @media all and (max-width: 767px) and (orientation: landscape) {
-      #intro h2 {
-        font-size: 9vw; } }
   #intro h3 {
     font-family: 'Droid Serif', serif;
     padding: 10px 70px 0 0;
@@ -171,15 +129,6 @@ hr {
     opacity: .75;
     font-weight: normal;
     display: inline-block; }
-    @media all and (max-width: 767px) and (orientation: landscape) {
-      #intro h3 {
-        display: none; } }
-    @media all and (max-width: 767px) and (orientation: portrait) {
-      #intro h3 {
-        font-size: 1.5rem;
-        padding: 0;
-        position: relative;
-        } }
   #intro button[type="button"] {
     font-size: .9rem;
     padding: 10px;
@@ -187,9 +136,6 @@ hr {
     color: #393939;
     background: none;
     border: 1px solid #393939; }
-    @media all and (max-width: 767px) {
-      #intro button[type="button"] {
-        display: none; } }
   #intro #arrow {
     position: absolute;
     bottom: 5px;
@@ -200,46 +146,38 @@ hr {
       -webkit-animation-duration: 1s;
       -webkit-animation-iteration-count: infinite;
       animation: bounce 1s infinite; }
-    @media all and (max-width: 767px) {
-      #intro #arrow img {
-        width: 66.667%;
-        height: auto; } }
     #intro #arrow p {
       text-transform: uppercase;
       color: white;
       margin-bottom: 3px; }
       #intro #arrow p a:hover, #intro #arrow p a:visited, #intro #arrow p a:link, #intro #arrow p a:active {
         text-decoration: none; }
-      @media all and (max-width: 767px) {
-        #intro #arrow p {
-          display: none; } }
 
 .content {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
   box-sizing: border-box; }
-  @media all and (max-width: 767px) {
-    .content {
-      padding: 40px 10px; } }
 
 .parallax {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
-  .parallax-1 {
-    background-image: url("../img/parallax.jpg"); }
-  .parallax-2 {
-    background-image: url("../img/parallax2.jpg"); }
 
-#limits {
+.parallax-1 {
+  background-image: url("../img/parallax.jpg"); }
+
+.parallax-2 {
+  background-image: url("../img/parallax2.jpg"); }
+
+.quote {
   background: -webkit-radial-gradient(transparent 20%, black);
   background: -o-radial-gradient(transparent 20%, black);
   background: -moz-radial-gradient(transparent 20%, black);
   background: radial-gradient(transparent 20%, black);
   border: 2px solid black; }
-  #limits p {
+  .quote p {
     text-align: center;
     padding: 60px 10px;
     margin: 0 auto;
@@ -247,65 +185,48 @@ hr {
     color: white;
     font-size: 1.7rem;
     max-width: 695px; }
+    .quote p.bigger {
+      max-width: 820px; }
 
 #about {
   margin: 0 auto;
   background: white;
   display: table; }
-  #about-text {
-    width: 40%;
-    display: table-cell; }
-    @media all and (max-width: 767px) {
-      #about-text {
-        width: 100%; } }
-    #about-text h1 {
-      font-size: 2rem;
-      color: #8c0000;
-      text-transform: uppercase;
-      text-align: right; }
-      @media all and (max-width: 767px) {
-        #about-text h1 {
-          font-size: 1.55rem; } }
-    #about-text button[type="button"] {
-      font-size: 1rem;
-      padding: 15px;
-      border-radius: 7px;
-      color: #8c0000;
-      background: none;
-      border: 1px solid black; }
-  #about-container {
-    width: 60%;
-    display: table-cell;
-    position: relative;
-    height: 100%;
-    min-height: 600px;
-    padding: 0;
-    margin: 0 0 -40px 0; }
-    @media all and (max-width: 767px) {
-      #about-container {
-        width: 100%;
-        display: block;
-        min-height: 0; } }
-  #about-pic {
-    width: 100%;
-    height: 100%;
-    min-height: 600px;
-    position: absolute;
-    margin-bottom: -40px;
-    bottom: 0;
-    background: url(../img/jay.jpg) no-repeat center bottom;
-    background-size: auto 100%; }
-    @media all and (min-width: 768px) and (max-width: 991px) {
-      #about-pic {
-        background-size: contain; } }
-    @media all and (max-width: 767px) {
-      #about-pic {
-        position: relative;
-        background-size: contain;
-        min-height: 0;
-        margin: 20px 0 0 0;
-        padding-top: 108.513%;
-        /* (img-height / img-width * 100) */ } }
+
+#about-text {
+  width: 40%;
+  display: table-cell; }
+  #about-text h1 {
+    font-size: 2rem;
+    color: #8c0000;
+    text-transform: uppercase;
+    text-align: right; }
+  #about-text button[type="button"] {
+    font-size: 1rem;
+    padding: 15px;
+    border-radius: 7px;
+    color: #8c0000;
+    background: none;
+    border: 1px solid black; }
+
+#about-container {
+  width: 60%;
+  display: table-cell;
+  position: relative;
+  height: 100%;
+  min-height: 600px;
+  padding: 0;
+  margin: 0 0 -40px 0; }
+
+#about-pic {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  position: absolute;
+  margin-bottom: -40px;
+  bottom: 0;
+  background: url(../img/jay.jpg) no-repeat center bottom;
+  background-size: auto 100%; }
 
 .clearfix:before,
 .clearfix:after {
@@ -340,7 +261,7 @@ hr {
   #gallery h3 {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-transform: uppercase; }
 
 #services {
@@ -363,9 +284,6 @@ hr {
     padding: 20px;
     box-sizing: border-box;
     text-align: center; }
-    @media all and (max-width: 767px) {
-      #services .thirds {
-        width: 100%; } }
     #services .thirds img {
       width: 60%;
       display: block;
@@ -384,27 +302,13 @@ hr {
       margin-bottom: 5px; }
     #services .thirds p {
       margin-top: 0; }
-  #services .different {
-    text-align: left;
-    color: #310000; }
-    #services .different a {
-      text-decoration: none;
-      color: #080808; }
 
-#quote {
-  background: -webkit-radial-gradient(transparent 20%, black);
-  background: -o-radial-gradient(transparent 20%, black);
-  background: -moz-radial-gradient(transparent 20%, black);
-  background: radial-gradient(transparent 20%, black);
-  border: 2px solid black; }
-  #quote p {
-    text-align: center;
-    padding: 60px 10px;
-    margin: 0 auto;
-    max-width: 820px;
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.7rem; }
+.different {
+  text-align: left;
+  color: #310000; }
+  .different a {
+    text-decoration: none;
+    color: #8c0000; }
 
 .halves {
   width: 50%;
@@ -413,9 +317,6 @@ hr {
   margin-top: -20px;
   box-sizing: border-box;
   text-align: center; }
-  @media all and (max-width: 767px) {
-    .halves {
-      width: 100%; } }
 
 #contact {
   box-sizing: border-box;
@@ -425,9 +326,6 @@ hr {
     font-size: 4.5rem;
     margin: 20px 0;
     color: white; }
-    @media all and (max-width: 767px) {
-      #contact h1 {
-        font-size: 3.3rem; } }
   #contact h2 {
     font-size: 2.2rem;
     margin-right: 15%;
@@ -435,10 +333,6 @@ hr {
     text-transform: uppercase;
     color: #8c0000;
     margin-bottom: 0; }
-    @media all and (max-width: 767px) {
-      #contact h2 {
-        font-size: 1.5rem;
-        margin: 0; } }
   #contact h3 {
     margin-top: 0;
     text-align: right;
@@ -447,17 +341,9 @@ hr {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 1.3rem;
     color: white; }
-    @media all and (max-width: 767px) {
-      #contact h3 {
-        font-size: 1rem;
-        margin: 0; } }
   #contact-magician {
     position: relative;
     height: 210px; }
-    @media all and (max-width: 767px) {
-      #contact-magician img {
-        width: 50%;
-        height: auto; } }
   #contact #cartoon {
     position: absolute;
     left: 0;
@@ -472,18 +358,6 @@ hr {
   background: #8c0000;
   padding: 10px 10px 10px 10px;
   width: 75%; }
-  @media all and (max-width: 767px) and (orientation: portrait) {
-    #form-div {
-      left: 0;
-      padding: 3px 7px 7px 7px;
-      margin-top: -100px;
-      margin-bottom: -20px;
-      width: 95%; } }
-  @media all and (max-width: 767px) and (orientation: landscape) {
-    #form-div {
-      left: 0;
-      padding: 3px 7px 7px 7px;
-      width: 95%; } }
 
 .feedback-input {
   color: #3c3c3c;
@@ -498,23 +372,13 @@ hr {
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   border: 3px solid #ccc; }
-  @media all and (max-width: 767px) {
-    .feedback-input {
-      padding: 5px 5px 5px 54px;
-      font-size: 1rem;
-      line-height: 1rem;
-      margin-top: -7px; } }
-
-.feedback-input:focus {
-  background: #fff;
-  box-shadow: 0;
-  border: 3px solid #080808;
-  color: #8c0000;
-  outline: none;
-  padding: 10px 10px 10px 54px; }
-  @media all and (max-width: 767px) {
-    .feedback-input:focus {
-      padding: 5px 5px 5px 40px; } }
+  .feedback-input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #080808;
+    color: #8c0000;
+    outline: none;
+    padding: 10px 10px 10px 54px; }
 
 .focused {
   color: #080808;
@@ -526,56 +390,24 @@ hr {
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat; }
-  @media all and (max-width: 767px) {
-    #name {
-      background-position: 0px 0px; } }
-
-#name:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-  background-size: 30px 30px;
-  background-position: 8px 5px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat; }
-  @media all and (max-width: 767px) {
-    #name:focus {
-      background-position: 0px 0px; } }
 
 #email {
   background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat; }
-  @media all and (max-width: 767px) {
-    #email {
-      background-position: 0px 0px; } }
-
-#email:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat; }
-  @media all and (max-width: 767px) {
-    #email:focus {
-      background-position: 0px 0px; } }
 
 #message {
   background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat; }
-  @media all and (max-width: 767px) {
-    #message {
-      background-position: 0px 0px; } }
 
 textarea {
   width: 100%;
   height: 150px;
   line-height: 150%;
   resize: vertical; }
-  @media all and (max-width: 767px) {
-    textarea {
-      height: 110px;
-      line-height: 110%; } }
 
 input:hover, textarea:hover,
 input:focus, textarea:focus {
@@ -597,17 +429,15 @@ input:focus, textarea:focus {
   transition: all 0.3s;
   margin-top: -4px;
   font-weight: 700; }
-  @media all and (max-width: 767px) {
-    #button-blue {
-      font-size: 1.3rem;
-      padding: 5px 0; } }
-
-#button-blue:hover {
-  background-color: transparent;
-  color: #8c0000; }
+  #button-blue:hover {
+    background-color: transparent;
+    color: #8c0000; }
 
 .submit:hover {
   color: #3498db; }
+  .submit:hover .ease {
+    width: 100%;
+    background-color: white; }
 
 .ease {
   width: 0px;
@@ -618,13 +448,6 @@ input:focus, textarea:focus {
   -o-transition: .3s ease;
   -ms-transition: .3s ease;
   transition: .3s ease; }
-  @media all and (max-width: 767px) {
-    .ease {
-      height: 40px; } }
-
-.submit:hover .ease {
-  width: 100%;
-  background-color: white; }
 
 #demo {
   max-width: 1200px;
@@ -643,22 +466,21 @@ input:focus, textarea:focus {
       width: 100%;
       height: 100%;
       background: none; }
-      @media all and (min-width: 767px) {
-        #demo .item a .ten {
-          position: relative;
-          bottom: 10%; }
-        #demo .item a .twenty {
-          position: relative;
-          bottom: 20%; }
-        #demo .item a .sixty {
-          position: relative;
-          bottom: 60%; }
-        #demo .item a .ninety {
-          position: relative;
-          bottom: 90%; }
-        #demo .item a .one30 {
-          position: relative;
-          bottom: 130%; } }
+      #demo .item a .ten {
+        position: relative;
+        bottom: 10%; }
+      #demo .item a .twenty {
+        position: relative;
+        bottom: 20%; }
+      #demo .item a .sixty {
+        position: relative;
+        bottom: 60%; }
+      #demo .item a .ninety {
+        position: relative;
+        bottom: 90%; }
+      #demo .item a .one30 {
+        position: relative;
+        bottom: 130%; }
 
 @-webkit-keyframes bounce {
   from {
@@ -674,5 +496,127 @@ input:focus, textarea:focus {
     top: 3px; }
   to {
     top: -3px; } }
+@media all and (max-width: 767px) {
+  #intro #heading {
+    background-position: top center; }
+  #intro button[type="button"] {
+    display: none; }
+  #intro #arrow img {
+    width: 66.667%;
+    height: auto; }
+  #intro #arrow p {
+    display: none; }
+
+  .content {
+    padding: 40px 10px; }
+
+  #about-text {
+    width: 100%; }
+    #about-text h1 {
+      font-size: 1.55rem; }
+
+  #about-container {
+    width: 100%;
+    display: block;
+    min-height: 0; }
+
+  #about-pic {
+    position: relative;
+    background-size: contain;
+    min-height: 0;
+    margin: 20px 0 0 0;
+    padding-top: 108.513%;
+    /* (img-height / img-width * 100) */ }
+
+  #services .thirds {
+    width: 100%; }
+
+  .halves {
+    width: 100%; }
+
+  #contact h1 {
+    font-size: 3.3rem; }
+  #contact h2 {
+    font-size: 1.5rem;
+    margin: 0; }
+  #contact h3 {
+    font-size: 1rem;
+    margin: 0; }
+  #contact #cartoon {
+    top: -50px; }
+  #contact-magician img {
+    width: 42%;
+    height: auto; }
+
+  .feedback-input {
+    padding: 5px 5px 5px 54px;
+    font-size: 1rem;
+    line-height: 1rem;
+    margin-top: -7px; }
+    .feedback-input:focus {
+      padding: 5px 5px 5px 40px; }
+
+  #name {
+    background-position: 0px 0px; }
+
+  #email {
+    background-position: 0px 0px; }
+
+  #message {
+    background-position: 0px 0px; }
+
+  textarea {
+    height: 110px;
+    line-height: 110%; }
+
+  #button-blue {
+    font-size: 1.3rem;
+    padding: 5px 0; }
+
+  .ease {
+    height: 40px; } }
+@media all and (max-width: 767px) and (orientation: landscape) {
+  #intro h1 {
+    font-size: 10vw;
+    padding-top: 14%; }
+  #intro h2 {
+    font-size: 9vw; }
+  #intro h3 {
+    display: none; }
+  #intro #heading {
+    max-width: 50%; }
+
+  #links ul li {
+    line-height: 2.5rem; }
+    #links ul li a {
+      font-size: 2rem; }
+
+  #form-div {
+    left: 0;
+    padding: 3px 7px 7px 7px;
+    width: 95%; } }
+@media all and (max-width: 767px) and (orientation: portrait) {
+  #intro h1 {
+    font-size: 14.7vw;
+    padding-top: 16%; }
+  #intro h3 {
+    font-size: 1.5rem;
+    padding: 0;
+    position: relative;
+    top: -40px; }
+
+  #form-div {
+    left: 0;
+    padding: 3px 7px 7px 7px;
+    margin-top: -100px;
+    margin-bottom: -20px;
+    width: 95%; } }
+@media all and (max-width: 620px) and (orientation: portrait) {
+  #intro h2 {
+    font-size: 13.4vw; } }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  #about-pic {
+    background-size: contain; } }
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
